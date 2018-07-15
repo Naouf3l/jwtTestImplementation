@@ -17,7 +17,7 @@ apply plugin: 'io.spring.dependency-management'
 
 group = 'org.myProject'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 9
+sourceCompatibility = 8
 
 repositories {
 	mavenCentral()
@@ -32,14 +32,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web-services')
 	compile('org.springframework.session:spring-session-core')
 	compile ('io.jsonwebtoken:jjwt:0.9.0')
-	compile group: 'com.sun.xml.bind', name: 'jaxb-core', version: '2.3.0'
-	compile group: 'com.sun.xml.bind', name: 'jaxb-impl', version: '2.3.0'
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('org.postgresql:postgresql')
-	runtime("javax.xml.bind:jaxb-api:2.2.11")
-	//runtime("com.sun.xml.bind:jaxb-core:2.2.11")
-//	runtime("com.sun.xml.bind:jaxb-impl:2.2.11")
-	runtime("javax.activation:activation:1.1.1")
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('org.springframework.security:spring-security-test')
